@@ -107,9 +107,9 @@ $(document).ready(function(){
     })
 
     //  check if Submit button under 'headphones' is clicked and get the review accordingly
-    $('').click(function(){
+    $('#h_button').click(function(){
 
-        review = $('').val()
+        review = $('#h_textbox').val()
         input_data = {'customer_review' : review}
         ajax_request('/predict' , input_data)
 
@@ -117,9 +117,9 @@ $(document).ready(function(){
     })
 
     //  check if Submit button under 'videogame' is clicked and get the review accordingly
-    $('#h_textbox').click(function(){
+    $('#v_button').click(function(){
 
-        review = $('').val()
+        review = $('#v_textbox').val()
         input_data = {'customer_review' : review}
         ajax_request('/predict' , input_data)
 
@@ -160,5 +160,7 @@ $(document).ready(function(){
 
 
 })
+
+    
 
     
